@@ -43,9 +43,8 @@ Add `Foundation.framework` , then click on `Add Other` and add the extracted `Vi
 
 ### <a id="sdk-init"></a>Vizury SDK Initialization
 
----
 #### Objective-C
- 
+---- 
   Import the VizuryEventLogger
  
  ```objc
@@ -64,7 +63,7 @@ Add `Foundation.framework` , then click on `Add Other` and add the extracted `Vi
 ---
 
 #### Swift
-
+----
  In yout bridging header file add
  
  ```objc
@@ -101,9 +100,9 @@ Where
 
 When a user browse through the app, various activities happen e.g. visiting a product, adding the product to cart, making purchase, etc. These are called events. Corresponding to each event, app needs to pass certain variables to the SDK which the SDK will automatically pass to Vizury servers.
 
----
-#### Objectve-C
 
+#### Objectve-C
+----
 Create an attributeDictionary with the attributes associated with the event and call `[VizuryEventLogger logEvent]` with event name and the attributeDictionary.
 
 ```objc
@@ -117,9 +116,9 @@ Create an attributeDictionary with the attributes associated with the event and 
 
     [VizuryEventLogger logEvent:@"productPage" WithAttributes:attributeDictionary];
 ```
----
-#### Swift
 
+#### Swift
+----
 Create an attributeDictionary with the attributes associated with the event and call `VizuryEventLogger.logEvent with event name and the attributeDictionary.
 
 ```swift
@@ -202,8 +201,8 @@ Click on `Cloud Messaging` tab and upload APNS Certificates (P12 format). Also n
 * Drag the GoogleService-Info.plist file you just downloaded into the root of your Xcode project and add it to all targets
 * Register for Pushnotifications inside didFinishLaunchingWithOptions method of you AppDelegate
 
-----
 #### Objectve-C
+----
 ```objc
     if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_7_1) {
         // iOS 7.1 or earlier
@@ -220,18 +219,16 @@ Click on `Cloud Messaging` tab and upload APNS Certificates (P12 format). Also n
         [[UIApplication sharedApplication] registerForRemoteNotifications];
     }
 ```
-----
-#### Swift
 
+#### Swift
+----
 ```swift
         if #available(iOS 10.0, *) {
             let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
             UNUserNotificationCenter.current().requestAuthorization(
                 options: authOptions,
                 completionHandler: {_, _ in })
-            
             UNUserNotificationCenter.current().delegate = self
-            
         } else {
             let settings: UIUserNotificationSettings =
                 UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
@@ -245,42 +242,59 @@ Click on `Cloud Messaging` tab and upload APNS Certificates (P12 format). Also n
 
 Pass the APNS token to Vizury
 
+#### Objectve-C
+----
 ```objc
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
 
     [VizuryEventLogger registerForPushWithToken:deviceToken];
 }
 ```
+----
 
+#### Swift
+-----
 ```swift
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         VizuryEventLogger.registerForPush(withToken: deviceToken)
     }
-```    
+```
+----
 
 In case of any failed registration
 
+#### Objectve-C
+----
 ```objc
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
 
     [VizuryEventLogger didFailToRegisterForPush];
 }
 ```
+-----
 
+#### Swift
+-----
 ```swift
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
         VizuryEventLogger.didFailToRegisterForPush()
     }
 ```    
+----
 
 * Handling notification payload
 
+#### Objectve-C
+-----
 ```objc
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(							UIBackgroundFetchResult))completionHandler {
     [VizuryEventLogger didReceiveRemoteNotificationInApplication:application withUserInfo:userInfo];
  }
 ```
+-----
 
+####Swift
+----
 ```swift
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any], fetchCompletionHandler 			completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {        
         VizuryEventLogger.didReceiveRemoteNotification(in: application, withUserInfo: userInfo)
@@ -297,12 +311,15 @@ In case of any failed registration
         self.customPushHandler(userInfo: pushDictionary)
         completionHandler();
     }
-```    
+```
+-----
 
 ### <a id="deeplinks"></a> Deeplinks
 
 In order to open Deep Links that are sent to the device as a Key/Value pair along with a push notification you must implement a custom handler
 
+#### Objectve-C
+-----
 ```objc
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(							UIBackgroundFetchResult))completionHandler {
     [VizuryEventLogger didReceiveRemoteNotificationInApplication:application withUserInfo:userInfo];
@@ -320,7 +337,10 @@ In order to open Deep Links that are sent to the device as a Key/Value pair alon
     }
 }
 ```
+-----
 
+#### Swift
+----
 ```swift
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any], fetchCompletionHandler 			completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {        
         VizuryEventLogger.didReceiveRemoteNotification(in: application, withUserInfo: userInfo)
@@ -345,10 +365,10 @@ In order to open Deep Links that are sent to the device as a Key/Value pair alon
         } 
     }
 ```
+----
 
 
 
- 
  [VizuryEventLogger_ios]:    https://github.com/vizury/vizury-ios-sdk/tree/master/binary
  [VizuryEventLogger_ios_bitcode_enable]:    https://github.com/vizury/vizury-ios-sdk/tree/master/binary/bitcodeEnabled
  [VizuryEventLogger_ios_bitcode_disable]:    https://github.com/vizury/vizury-ios-sdk/tree/master/binary/bitcodeDisabled
