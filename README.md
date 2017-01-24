@@ -42,8 +42,11 @@ Add `Foundation.framework` , then click on `Add Other` and add the extracted `Vi
 
 
 ### <a id="sdk-init"></a>Vizury SDK Initialization
+
+---
+#### Objective-C
  
- Import the VizuryEventLogger
+  Import the VizuryEventLogger
  
  ```objc
  #import <VizuryEventLogger/VizuryEventLogger.h>
@@ -58,13 +61,40 @@ Add `Foundation.framework` , then click on `Add Other` and add the extracted `Vi
                             WithCachingEnabled:(BOOL) caching
                             AndGCMWithSandBoxOption:(NSObject *)sandBoxOption];
 ```
+---
+
+#### Swift
+
+ In yout bridging header file add
+ 
+ ```objc
+ #import <VizuryEventLogger/VizuryEventLogger.h>
+ ```
+ 
+ Update your AppDelegate 
+ 
+ ```swift
+ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate
+ ```
+ 
+ Add the following in `didFinishLaunchingWithOptions` method of AppDelegate to initialize the SDK
+ 
+```objc
+VizuryEventLogger.initializeEventLogger(in: application,
+			withPackageId: packageId, 
+			serverURL: serverUrl,
+			withCachingEnabled: caching, 
+			andGCMWithSandBoxOption:sandBoxOption as NSObject!)
+```
+---
 ```
 Where 
   packageId     : packageId obtained from vizury
   serverURL     : serverURL obtained from vizury
   caching       : pass true if your app supports offline usage and you want to send user behaviour data 
                   to vizury while he was offline. Pass false otherwise
-  sandBoxOption : @YES for for development or @NO for production
+  sandBoxOption : @YES for for development or @NO for production (Objective-C)
+  		  1 for development and 0 for production (Swift)
 ``` 
  
 ### <a id="event-logging"></a>Event Logging
