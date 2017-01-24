@@ -92,7 +92,7 @@ Where
   caching       : pass true if your app supports offline usage and you want to send user behaviour data 
                   to vizury while he was offline. Pass false otherwise
   sandBoxOption : @YES for for development or @NO for production (Objective-C)
-		  1 for development and 0 for production (Swift)
+                  1 for development and 0 for production (Swift)
 ``` 
  
 ### <a id="event-logging"></a>Event Logging
