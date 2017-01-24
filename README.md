@@ -60,7 +60,6 @@ Add `Foundation.framework` , then click on `Add Other` and add the extracted `Vi
                             WithCachingEnabled:(BOOL) caching
                             AndGCMWithSandBoxOption:(NSObject *)sandBoxOption];
 ```
----
 
 #### Swift
 ----
@@ -250,7 +249,6 @@ Pass the APNS token to Vizury
     [VizuryEventLogger registerForPushWithToken:deviceToken];
 }
 ```
-----
 
 #### Swift
 -----
@@ -271,7 +269,6 @@ In case of any failed registration
     [VizuryEventLogger didFailToRegisterForPush];
 }
 ```
------
 
 #### Swift
 -----
@@ -291,7 +288,6 @@ In case of any failed registration
     [VizuryEventLogger didReceiveRemoteNotificationInApplication:application withUserInfo:userInfo];
  }
 ```
------
 
 ####Swift
 ----
@@ -337,7 +333,6 @@ In order to open Deep Links that are sent to the device as a Key/Value pair alon
     }
 }
 ```
------
 
 #### Swift
 ----
