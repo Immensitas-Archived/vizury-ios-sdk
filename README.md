@@ -84,7 +84,7 @@ VizuryEventLogger.initializeEventLogger(in: application,
 			withCachingEnabled: caching, 
 			andGCMWithSandBoxOption:sandBoxOption as NSObject!)
 ```
----
+
 ```
 Where 
   packageId     : packageId obtained from vizury
@@ -92,7 +92,7 @@ Where
   caching       : pass true if your app supports offline usage and you want to send user behaviour data 
                   to vizury while he was offline. Pass false otherwise
   sandBoxOption : @YES for for development or @NO for production (Objective-C)
-  		  1 for development and 0 for production (Swift)
+		  1 for development and 0 for production (Swift)
 ``` 
  
 ### <a id="event-logging"></a>Event Logging
@@ -126,7 +126,6 @@ Create an attributeDictionary with the attributes associated with the event and 
                                         "category" : "shirt"]
         VizuryEventLogger.logEvent("productPage", withAttributes: attributeDictionary)
 ```	
----
 
 ## <a id="push-notifications"></a>Push Notifications
 
@@ -235,7 +234,6 @@ Click on `Cloud Messaging` tab and upload APNS Certificates (P12 format). Also n
         }
         application.registerForRemoteNotifications()
 ```
-----
 
 * Post Registration 
 
@@ -257,7 +255,6 @@ Pass the APNS token to Vizury
         VizuryEventLogger.registerForPush(withToken: deviceToken)
     }
 ```
-----
 
 In case of any failed registration
 
@@ -277,7 +274,6 @@ In case of any failed registration
         VizuryEventLogger.didFailToRegisterForPush()
     }
 ```    
-----
 
 * Handling notification payload
 
@@ -308,7 +304,6 @@ In case of any failed registration
         completionHandler();
     }
 ```
------
 
 ### <a id="deeplinks"></a> Deeplinks
 
@@ -360,7 +355,6 @@ In order to open Deep Links that are sent to the device as a Key/Value pair alon
         } 
     }
 ```
-----
 
 
 
