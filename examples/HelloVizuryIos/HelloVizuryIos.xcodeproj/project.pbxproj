@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7031AB1DE08EF52C83842A0C /* libPods-HelloVizuryIos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF5089F314E2FD14C82B57FA /* libPods-HelloVizuryIos.a */; };
+		7527C53D1E37490500CA956E /* VizuryEventLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D73FEA1DDC964A000BAF4D /* VizuryEventLogger.framework */; };
+		755A73081DED66ED00957D4B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 755A73071DED66ED00957D4B /* GoogleService-Info.plist */; };
 		75FB6DDC1D817CDF00CBFDE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB6DDB1D817CDF00CBFDE4 /* main.m */; };
 		75FB6DDF1D817CDF00CBFDE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB6DDE1D817CDF00CBFDE4 /* AppDelegate.m */; };
 		75FB6DE21D817CDF00CBFDE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB6DE11D817CDF00CBFDE4 /* ViewController.m */; };
@@ -14,11 +17,20 @@
 		75FB6DE71D817CDF00CBFDE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75FB6DE61D817CDF00CBFDE4 /* Images.xcassets */; };
 		75FB6DEA1D817CDF00CBFDE4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75FB6DE81D817CDF00CBFDE4 /* LaunchScreen.xib */; };
 		75FB6DF61D817CE000CBFDE4 /* HelloVizuryIosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB6DF51D817CE000CBFDE4 /* HelloVizuryIosTests.m */; };
-		75FB6E051D81B7AF00CBFDE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75FB6E041D81B7AF00CBFDE4 /* Foundation.framework */; };
-		75FB6E091D81BDC000CBFDE4 /* VizuryEventLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75FB6E081D81BDC000CBFDE4 /* VizuryEventLogger.framework */; };
-		75FB6E0B1D81BDD100CBFDE4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75FB6E0A1D81BDD100CBFDE4 /* GoogleService-Info.plist */; };
-		789FF4F6AFE70CC425688913 /* libPods-HelloVizuryIos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1851E62A5B182172713423B9 /* libPods-HelloVizuryIos.a */; };
+		812114533ADB0C7BAFCFA81F /* libPods-HelloVizuryIosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67FC844A3343D2D4902D4768 /* libPods-HelloVizuryIosTests.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		755A73031DED65A000957D4B /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = file.bplist;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# builtin-copyPlist\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		75FB6DF01D817CE000CBFDE4 /* PBXContainerItemProxy */ = {
@@ -31,8 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0368D6FE80D35CDA6848E766 /* Pods-HelloVizuryIos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloVizuryIos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloVizuryIos/Pods-HelloVizuryIos.debug.xcconfig"; sourceTree = "<group>"; };
-		1851E62A5B182172713423B9 /* libPods-HelloVizuryIos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloVizuryIos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3320C60F2A234FBA408DAE01 /* Pods-HelloVizuryIos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloVizuryIos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloVizuryIos/Pods-HelloVizuryIos.debug.xcconfig"; sourceTree = "<group>"; };
+		67FC844A3343D2D4902D4768 /* libPods-HelloVizuryIosTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloVizuryIosTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7527C53E1E37490E00CA956E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		755A73071DED66ED00957D4B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		75D73FEA1DDC964A000BAF4D /* VizuryEventLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VizuryEventLogger.framework; sourceTree = "<group>"; };
 		75FB6DD61D817CDF00CBFDE4 /* HelloVizuryIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloVizuryIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75FB6DDA1D817CDF00CBFDE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75FB6DDB1D817CDF00CBFDE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,11 +61,10 @@
 		75FB6DEF1D817CE000CBFDE4 /* HelloVizuryIosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloVizuryIosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75FB6DF41D817CE000CBFDE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75FB6DF51D817CE000CBFDE4 /* HelloVizuryIosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloVizuryIosTests.m; sourceTree = "<group>"; };
-		75FB6E011D817F2200CBFDE4 /* VizuryEventLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VizuryEventLogger.framework; path = "../../app2app/vizury-ios-sdk.git/VizuryEventLogger.framework"; sourceTree = "<group>"; };
-		75FB6E041D81B7AF00CBFDE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		75FB6E081D81BDC000CBFDE4 /* VizuryEventLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VizuryEventLogger.framework; sourceTree = "<group>"; };
-		75FB6E0A1D81BDD100CBFDE4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
-		E468A7537C4A51E08E06EC97 /* Pods-HelloVizuryIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloVizuryIos.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloVizuryIos/Pods-HelloVizuryIos.release.xcconfig"; sourceTree = "<group>"; };
+		7732D010631524AA578616BB /* Pods-HelloVizuryIosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloVizuryIosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloVizuryIosTests/Pods-HelloVizuryIosTests.release.xcconfig"; sourceTree = "<group>"; };
+		7B7A7A855E3079016634A3AF /* Pods-HelloVizuryIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloVizuryIos.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloVizuryIos/Pods-HelloVizuryIos.release.xcconfig"; sourceTree = "<group>"; };
+		E726CB30DE5489969EDD1AA7 /* Pods-HelloVizuryIosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloVizuryIosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloVizuryIosTests/Pods-HelloVizuryIosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF5089F314E2FD14C82B57FA /* libPods-HelloVizuryIos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloVizuryIos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75FB6E091D81BDC000CBFDE4 /* VizuryEventLogger.framework in Frameworks */,
-				75FB6E051D81B7AF00CBFDE4 /* Foundation.framework in Frameworks */,
-				789FF4F6AFE70CC425688913 /* libPods-HelloVizuryIos.a in Frameworks */,
+				7527C53D1E37490500CA956E /* VizuryEventLogger.framework in Frameworks */,
+				7031AB1DE08EF52C83842A0C /* libPods-HelloVizuryIos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				812114533ADB0C7BAFCFA81F /* libPods-HelloVizuryIosTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,9 +91,10 @@
 		629EAF05F0F8115AF478ABB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				75FB6E081D81BDC000CBFDE4 /* VizuryEventLogger.framework */,
-				75FB6E041D81B7AF00CBFDE4 /* Foundation.framework */,
-				1851E62A5B182172713423B9 /* libPods-HelloVizuryIos.a */,
+				7527C53E1E37490E00CA956E /* Foundation.framework */,
+				75D73FEA1DDC964A000BAF4D /* VizuryEventLogger.framework */,
+				FF5089F314E2FD14C82B57FA /* libPods-HelloVizuryIos.a */,
+				67FC844A3343D2D4902D4768 /* libPods-HelloVizuryIosTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -87,12 +102,11 @@
 		75FB6DCD1D817CDF00CBFDE4 = {
 			isa = PBXGroup;
 			children = (
-				75FB6E011D817F2200CBFDE4 /* VizuryEventLogger.framework */,
 				75FB6DD81D817CDF00CBFDE4 /* HelloVizuryIos */,
 				75FB6DF21D817CE000CBFDE4 /* HelloVizuryIosTests */,
 				75FB6DD71D817CDF00CBFDE4 /* Products */,
-				BEE4539BB2E0F9411D206763 /* Pods */,
 				629EAF05F0F8115AF478ABB1 /* Frameworks */,
+				7A5BD2783FA42214065DB502 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,7 +122,7 @@
 		75FB6DD81D817CDF00CBFDE4 /* HelloVizuryIos */ = {
 			isa = PBXGroup;
 			children = (
-				75FB6E0A1D81BDD100CBFDE4 /* GoogleService-Info.plist */,
+				755A73071DED66ED00957D4B /* GoogleService-Info.plist */,
 				75FB6DDD1D817CDF00CBFDE4 /* AppDelegate.h */,
 				75FB6DDE1D817CDF00CBFDE4 /* AppDelegate.m */,
 				75FB6DE01D817CDF00CBFDE4 /* ViewController.h */,
@@ -147,11 +161,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BEE4539BB2E0F9411D206763 /* Pods */ = {
+		7A5BD2783FA42214065DB502 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0368D6FE80D35CDA6848E766 /* Pods-HelloVizuryIos.debug.xcconfig */,
-				E468A7537C4A51E08E06EC97 /* Pods-HelloVizuryIos.release.xcconfig */,
+				3320C60F2A234FBA408DAE01 /* Pods-HelloVizuryIos.debug.xcconfig */,
+				7B7A7A855E3079016634A3AF /* Pods-HelloVizuryIos.release.xcconfig */,
+				E726CB30DE5489969EDD1AA7 /* Pods-HelloVizuryIosTests.debug.xcconfig */,
+				7732D010631524AA578616BB /* Pods-HelloVizuryIosTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -163,14 +179,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75FB6DF91D817CE000CBFDE4 /* Build configuration list for PBXNativeTarget "HelloVizuryIos" */;
 			buildPhases = (
-				96B1D3701968AD50582BD74B /* Check Pods Manifest.lock */,
+				36745D570C8CD915AD43D18C /* [CP] Check Pods Manifest.lock */,
 				75FB6DD21D817CDF00CBFDE4 /* Sources */,
 				75FB6DD31D817CDF00CBFDE4 /* Frameworks */,
 				75FB6DD41D817CDF00CBFDE4 /* Resources */,
-				191759D13E426B41FFA9E259 /* Embed Pods Frameworks */,
-				62BD3B67557BE884C6FDC4B5 /* Copy Pods Resources */,
+				CE9B2DDB847EE3B4C24C6F3C /* [CP] Embed Pods Frameworks */,
+				2E60F4A870C3B6CD12C024EC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
+				755A73031DED65A000957D4B /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -183,9 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75FB6DFC1D817CE000CBFDE4 /* Build configuration list for PBXNativeTarget "HelloVizuryIosTests" */;
 			buildPhases = (
+				3E02BD706C5E7B69C589B65A /* [CP] Check Pods Manifest.lock */,
 				75FB6DEB1D817CE000CBFDE4 /* Sources */,
 				75FB6DEC1D817CE000CBFDE4 /* Frameworks */,
 				75FB6DED1D817CE000CBFDE4 /* Resources */,
+				FD7D6C8F0F24C93A0148605D /* [CP] Embed Pods Frameworks */,
+				B3DB6EB333AF7C699529A760 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,6 +228,7 @@
 				TargetAttributes = {
 					75FB6DD51D817CDF00CBFDE4 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = GJ9KW5KCDS;
 					};
 					75FB6DEE1D817CE000CBFDE4 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -240,7 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75FB6DE51D817CDF00CBFDE4 /* Main.storyboard in Resources */,
-				75FB6E0B1D81BDD100CBFDE4 /* GoogleService-Info.plist in Resources */,
+				755A73081DED66ED00957D4B /* GoogleService-Info.plist in Resources */,
 				75FB6DEA1D817CDF00CBFDE4 /* LaunchScreen.xib in Resources */,
 				75FB6DE71D817CDF00CBFDE4 /* Images.xcassets in Resources */,
 			);
@@ -256,29 +277,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		191759D13E426B41FFA9E259 /* Embed Pods Frameworks */ = {
+		2E60F4A870C3B6CD12C024EC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloVizuryIos/Pods-HelloVizuryIos-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		62BD3B67557BE884C6FDC4B5 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,19 +292,79 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloVizuryIos/Pods-HelloVizuryIos-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		96B1D3701968AD50582BD74B /* Check Pods Manifest.lock */ = {
+		36745D570C8CD915AD43D18C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3E02BD706C5E7B69C589B65A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B3DB6EB333AF7C699529A760 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloVizuryIosTests/Pods-HelloVizuryIosTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE9B2DDB847EE3B4C24C6F3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloVizuryIos/Pods-HelloVizuryIos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD7D6C8F0F24C93A0148605D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloVizuryIosTests/Pods-HelloVizuryIosTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -374,6 +440,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -389,6 +456,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -416,6 +484,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -424,6 +493,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -432,38 +502,133 @@
 		};
 		75FB6DFA1D817CE000CBFDE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0368D6FE80D35CDA6848E766 /* Pods-HelloVizuryIos.debug.xcconfig */;
+			baseConfigurationReference = 3320C60F2A234FBA408DAE01 /* Pods-HelloVizuryIos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/anurag/Documents/app2app/vizury-ios-sdk.git",
 					"$(PROJECT_DIR)",
+					/Users/anurag/Desktop/vizurgEventLogger,
+					fwk/bitcode,
+					enabled,
+					/Users/anurag/Desktop/vizurgEventLogger,
+					fwk/bitcode,
+					"disabled(old)",
 				);
+				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = HelloVizuryIos/Info.plist;
+				LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-l\"GGLCloudMessaging\"",
+					"-l\"GGLCore\"",
+					"-l\"GGLInstanceIDLib\"",
+					"-l\"GcmLib\"",
+					"-l\"sqlite3\"",
+					"-l\"stdc++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"GoogleIPhoneUtilities\"",
+					"-framework",
+					"\"GoogleInterchangeUtilities\"",
+					"-framework",
+					"\"GoogleNetworkingUtilities\"",
+					"-framework",
+					"\"GoogleSymbolUtilities\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"$(inherited)",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		75FB6DFB1D817CE000CBFDE4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E468A7537C4A51E08E06EC97 /* Pods-HelloVizuryIos.release.xcconfig */;
+			baseConfigurationReference = 7B7A7A855E3079016634A3AF /* Pods-HelloVizuryIos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/anurag/Documents/app2app/vizury-ios-sdk.git",
 					"$(PROJECT_DIR)",
+					/Users/anurag/Desktop/vizurgEventLogger,
+					fwk/bitcode,
+					enabled,
+					/Users/anurag/Desktop/vizurgEventLogger,
+					fwk/bitcode,
+					"disabled(old)",
 				);
+				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = HelloVizuryIos/Info.plist;
+				LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-l\"GGLCloudMessaging\"",
+					"-l\"GGLCore\"",
+					"-l\"GGLInstanceIDLib\"",
+					"-l\"GcmLib\"",
+					"-l\"sqlite3\"",
+					"-l\"stdc++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"GoogleIPhoneUtilities\"",
+					"-framework",
+					"\"GoogleInterchangeUtilities\"",
+					"-framework",
+					"\"GoogleNetworkingUtilities\"",
+					"-framework",
+					"\"GoogleSymbolUtilities\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"$(inherited)",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 		75FB6DFD1D817CE000CBFDE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E726CB30DE5489969EDD1AA7 /* Pods-HelloVizuryIosTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -483,6 +648,7 @@
 		};
 		75FB6DFE1D817CE000CBFDE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7732D010631524AA578616BB /* Pods-HelloVizuryIosTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
