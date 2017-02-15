@@ -2,11 +2,10 @@
 //  HelloVizuryIosTests.m
 //  HelloVizuryIosTests
 //
-//  Created by Anurag on 9/8/16.
-//  Copyright (c) 2016 Vizury. All rights reserved.
+//  Created by Anurag on 2/15/17.
+//  Copyright © 2017 Vizury. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
 @interface HelloVizuryIosTests : XCTestCase
@@ -27,7 +26,7 @@
 
 - (void)testExample {
     // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+    // Use XCTAssert and related functions to verify your tests produce the correct results.
 }
 
 - (void)testPerformanceExample {

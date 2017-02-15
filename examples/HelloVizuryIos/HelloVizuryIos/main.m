@@ -2,8 +2,8 @@
 //  main.m
 //  HelloVizuryIos
 //
-//  Created by Anurag on 9/8/16.
-//  Copyright (c) 2016 Vizury. All rights reserved.
+//  Created by Anurag on 2/15/17.
+//  Copyright © 2017 Vizury. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

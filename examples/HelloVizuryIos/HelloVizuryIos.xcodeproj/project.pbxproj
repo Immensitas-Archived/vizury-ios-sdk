@@ -7,236 +7,294 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7031AB1DE08EF52C83842A0C /* libPods-HelloVizuryIos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF5089F314E2FD14C82B57FA /* libPods-HelloVizuryIos.a */; };
-		7527C53D1E37490500CA956E /* VizuryEventLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D73FEA1DDC964A000BAF4D /* VizuryEventLogger.framework */; };
-		755A73081DED66ED00957D4B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 755A73071DED66ED00957D4B /* GoogleService-Info.plist */; };
-		75FB6DDC1D817CDF00CBFDE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB6DDB1D817CDF00CBFDE4 /* main.m */; };
-		75FB6DDF1D817CDF00CBFDE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB6DDE1D817CDF00CBFDE4 /* AppDelegate.m */; };
-		75FB6DE21D817CDF00CBFDE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB6DE11D817CDF00CBFDE4 /* ViewController.m */; };
-		75FB6DE51D817CDF00CBFDE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75FB6DE31D817CDF00CBFDE4 /* Main.storyboard */; };
-		75FB6DE71D817CDF00CBFDE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75FB6DE61D817CDF00CBFDE4 /* Images.xcassets */; };
-		75FB6DEA1D817CDF00CBFDE4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75FB6DE81D817CDF00CBFDE4 /* LaunchScreen.xib */; };
-		75FB6DF61D817CE000CBFDE4 /* HelloVizuryIosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB6DF51D817CE000CBFDE4 /* HelloVizuryIosTests.m */; };
-		812114533ADB0C7BAFCFA81F /* libPods-HelloVizuryIosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67FC844A3343D2D4902D4768 /* libPods-HelloVizuryIosTests.a */; };
+		384734C43AB49FA9847F0B23 /* libPods-HelloVizuryIosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE67BC2D84BE1CBFE97DE536 /* libPods-HelloVizuryIosTests.a */; };
+		6E36E6DBA6B70CB8E8EF7784 /* libPods-HelloVizuryIos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA2EF82E0210EF4D68D1709 /* libPods-HelloVizuryIos.a */; };
+		7568AB391E543D1900C4780D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7568AB381E543D1900C4780D /* main.m */; };
+		7568AB3C1E543D1900C4780D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7568AB3B1E543D1900C4780D /* AppDelegate.m */; };
+		7568AB3F1E543D1900C4780D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7568AB3E1E543D1900C4780D /* ViewController.m */; };
+		7568AB421E543D1900C4780D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7568AB401E543D1900C4780D /* Main.storyboard */; };
+		7568AB441E543D1900C4780D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7568AB431E543D1900C4780D /* Assets.xcassets */; };
+		7568AB471E543D1900C4780D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7568AB451E543D1900C4780D /* LaunchScreen.storyboard */; };
+		7568AB521E543D1A00C4780D /* HelloVizuryIosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7568AB511E543D1A00C4780D /* HelloVizuryIosTests.m */; };
+		7568AB5D1E543D1A00C4780D /* HelloVizuryIosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7568AB5C1E543D1A00C4780D /* HelloVizuryIosUITests.m */; };
+		7568AB6D1E543E7D00C4780D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7568AB6C1E543E7D00C4780D /* GoogleService-Info.plist */; };
+		7568AB6F1E54432200C4780D /* VizuryEventLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7568AB6A1E543E7000C4780D /* VizuryEventLogger.framework */; };
+		7568AB711E54433E00C4780D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7568AB701E54433E00C4780D /* Foundation.framework */; };
+		AADE2935E9BDDC59D5BFC02E /* libPods-HelloVizuryIosUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77FC7C665795E881E682A7EC /* libPods-HelloVizuryIosUITests.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXBuildRule section */
-		755A73031DED65A000957D4B /* PBXBuildRule */ = {
-			isa = PBXBuildRule;
-			compilerSpec = com.apple.compilers.proxy.script;
-			fileType = file.bplist;
-			isEditable = 1;
-			outputFiles = (
-			);
-			script = "# builtin-copyPlist\n";
-		};
-/* End PBXBuildRule section */
-
 /* Begin PBXContainerItemProxy section */
-		75FB6DF01D817CE000CBFDE4 /* PBXContainerItemProxy */ = {
+		7568AB4E1E543D1A00C4780D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 75FB6DCE1D817CDF00CBFDE4 /* Project object */;
+			containerPortal = 7568AB2C1E543D1900C4780D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 75FB6DD51D817CDF00CBFDE4;
+			remoteGlobalIDString = 7568AB331E543D1900C4780D;
+			remoteInfo = HelloVizuryIos;
+		};
+		7568AB591E543D1A00C4780D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7568AB2C1E543D1900C4780D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7568AB331E543D1900C4780D;
 			remoteInfo = HelloVizuryIos;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3320C60F2A234FBA408DAE01 /* Pods-HelloVizuryIos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloVizuryIos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloVizuryIos/Pods-HelloVizuryIos.debug.xcconfig"; sourceTree = "<group>"; };
-		67FC844A3343D2D4902D4768 /* libPods-HelloVizuryIosTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloVizuryIosTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7527C53E1E37490E00CA956E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		755A73071DED66ED00957D4B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
-		75D73FEA1DDC964A000BAF4D /* VizuryEventLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VizuryEventLogger.framework; sourceTree = "<group>"; };
-		75FB6DD61D817CDF00CBFDE4 /* HelloVizuryIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloVizuryIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		75FB6DDA1D817CDF00CBFDE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75FB6DDB1D817CDF00CBFDE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		75FB6DDD1D817CDF00CBFDE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		75FB6DDE1D817CDF00CBFDE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		75FB6DE01D817CDF00CBFDE4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		75FB6DE11D817CDF00CBFDE4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		75FB6DE41D817CDF00CBFDE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		75FB6DE61D817CDF00CBFDE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		75FB6DE91D817CDF00CBFDE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		75FB6DEF1D817CE000CBFDE4 /* HelloVizuryIosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloVizuryIosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		75FB6DF41D817CE000CBFDE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75FB6DF51D817CE000CBFDE4 /* HelloVizuryIosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloVizuryIosTests.m; sourceTree = "<group>"; };
-		7732D010631524AA578616BB /* Pods-HelloVizuryIosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloVizuryIosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloVizuryIosTests/Pods-HelloVizuryIosTests.release.xcconfig"; sourceTree = "<group>"; };
-		7B7A7A855E3079016634A3AF /* Pods-HelloVizuryIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloVizuryIos.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloVizuryIos/Pods-HelloVizuryIos.release.xcconfig"; sourceTree = "<group>"; };
-		E726CB30DE5489969EDD1AA7 /* Pods-HelloVizuryIosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloVizuryIosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloVizuryIosTests/Pods-HelloVizuryIosTests.debug.xcconfig"; sourceTree = "<group>"; };
-		FF5089F314E2FD14C82B57FA /* libPods-HelloVizuryIos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloVizuryIos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		259C150D787451E43ABB080A /* Pods-HelloVizuryIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloVizuryIos.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloVizuryIos/Pods-HelloVizuryIos.release.xcconfig"; sourceTree = "<group>"; };
+		3CE9565E5C9700FDED951587 /* Pods-HelloVizuryIosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloVizuryIosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloVizuryIosTests/Pods-HelloVizuryIosTests.release.xcconfig"; sourceTree = "<group>"; };
+		3E0B65637DEFBF2DA3268C99 /* Pods-HelloVizuryIosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloVizuryIosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloVizuryIosTests/Pods-HelloVizuryIosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4FA2EF82E0210EF4D68D1709 /* libPods-HelloVizuryIos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloVizuryIos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7568AB341E543D1900C4780D /* HelloVizuryIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloVizuryIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7568AB381E543D1900C4780D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7568AB3A1E543D1900C4780D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7568AB3B1E543D1900C4780D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7568AB3D1E543D1900C4780D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7568AB3E1E543D1900C4780D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7568AB411E543D1900C4780D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7568AB431E543D1900C4780D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7568AB461E543D1900C4780D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7568AB481E543D1900C4780D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7568AB4D1E543D1A00C4780D /* HelloVizuryIosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloVizuryIosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7568AB511E543D1A00C4780D /* HelloVizuryIosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloVizuryIosTests.m; sourceTree = "<group>"; };
+		7568AB531E543D1A00C4780D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7568AB581E543D1A00C4780D /* HelloVizuryIosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloVizuryIosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7568AB5C1E543D1A00C4780D /* HelloVizuryIosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloVizuryIosUITests.m; sourceTree = "<group>"; };
+		7568AB5E1E543D1A00C4780D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7568AB6A1E543E7000C4780D /* VizuryEventLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VizuryEventLogger.framework; sourceTree = "<group>"; };
+		7568AB6C1E543E7D00C4780D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7568AB6E1E543EAE00C4780D /* HelloVizuryIos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HelloVizuryIos.entitlements; sourceTree = "<group>"; };
+		7568AB701E54433E00C4780D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		77FC7C665795E881E682A7EC /* libPods-HelloVizuryIosUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloVizuryIosUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D8DB0D85276806FD9002DF /* Pods-HelloVizuryIos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloVizuryIos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloVizuryIos/Pods-HelloVizuryIos.debug.xcconfig"; sourceTree = "<group>"; };
+		DE67BC2D84BE1CBFE97DE536 /* libPods-HelloVizuryIosTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloVizuryIosTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10BE1216404CE6E17E157C3 /* Pods-HelloVizuryIosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloVizuryIosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloVizuryIosUITests/Pods-HelloVizuryIosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E9554810AFF80DF06787FB82 /* Pods-HelloVizuryIosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloVizuryIosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloVizuryIosUITests/Pods-HelloVizuryIosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		75FB6DD31D817CDF00CBFDE4 /* Frameworks */ = {
+		7568AB311E543D1900C4780D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7527C53D1E37490500CA956E /* VizuryEventLogger.framework in Frameworks */,
-				7031AB1DE08EF52C83842A0C /* libPods-HelloVizuryIos.a in Frameworks */,
+				7568AB711E54433E00C4780D /* Foundation.framework in Frameworks */,
+				7568AB6F1E54432200C4780D /* VizuryEventLogger.framework in Frameworks */,
+				6E36E6DBA6B70CB8E8EF7784 /* libPods-HelloVizuryIos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		75FB6DEC1D817CE000CBFDE4 /* Frameworks */ = {
+		7568AB4A1E543D1A00C4780D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				812114533ADB0C7BAFCFA81F /* libPods-HelloVizuryIosTests.a in Frameworks */,
+				384734C43AB49FA9847F0B23 /* libPods-HelloVizuryIosTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7568AB551E543D1A00C4780D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AADE2935E9BDDC59D5BFC02E /* libPods-HelloVizuryIosUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		629EAF05F0F8115AF478ABB1 /* Frameworks */ = {
+		6B2316558850958E86804BB1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7527C53E1E37490E00CA956E /* Foundation.framework */,
-				75D73FEA1DDC964A000BAF4D /* VizuryEventLogger.framework */,
-				FF5089F314E2FD14C82B57FA /* libPods-HelloVizuryIos.a */,
-				67FC844A3343D2D4902D4768 /* libPods-HelloVizuryIosTests.a */,
+				84D8DB0D85276806FD9002DF /* Pods-HelloVizuryIos.debug.xcconfig */,
+				259C150D787451E43ABB080A /* Pods-HelloVizuryIos.release.xcconfig */,
+				3E0B65637DEFBF2DA3268C99 /* Pods-HelloVizuryIosTests.debug.xcconfig */,
+				3CE9565E5C9700FDED951587 /* Pods-HelloVizuryIosTests.release.xcconfig */,
+				E9554810AFF80DF06787FB82 /* Pods-HelloVizuryIosUITests.debug.xcconfig */,
+				E10BE1216404CE6E17E157C3 /* Pods-HelloVizuryIosUITests.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		75FB6DCD1D817CDF00CBFDE4 = {
+		7568AB2B1E543D1900C4780D = {
 			isa = PBXGroup;
 			children = (
-				75FB6DD81D817CDF00CBFDE4 /* HelloVizuryIos */,
-				75FB6DF21D817CE000CBFDE4 /* HelloVizuryIosTests */,
-				75FB6DD71D817CDF00CBFDE4 /* Products */,
-				629EAF05F0F8115AF478ABB1 /* Frameworks */,
-				7A5BD2783FA42214065DB502 /* Pods */,
+				7568AB6C1E543E7D00C4780D /* GoogleService-Info.plist */,
+				7568AB361E543D1900C4780D /* HelloVizuryIos */,
+				7568AB501E543D1A00C4780D /* HelloVizuryIosTests */,
+				7568AB5B1E543D1A00C4780D /* HelloVizuryIosUITests */,
+				7568AB351E543D1900C4780D /* Products */,
+				6B2316558850958E86804BB1 /* Pods */,
+				F6DDFDB98DD5A4FC5F734F9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		75FB6DD71D817CDF00CBFDE4 /* Products */ = {
+		7568AB351E543D1900C4780D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				75FB6DD61D817CDF00CBFDE4 /* HelloVizuryIos.app */,
-				75FB6DEF1D817CE000CBFDE4 /* HelloVizuryIosTests.xctest */,
+				7568AB341E543D1900C4780D /* HelloVizuryIos.app */,
+				7568AB4D1E543D1A00C4780D /* HelloVizuryIosTests.xctest */,
+				7568AB581E543D1A00C4780D /* HelloVizuryIosUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		75FB6DD81D817CDF00CBFDE4 /* HelloVizuryIos */ = {
+		7568AB361E543D1900C4780D /* HelloVizuryIos */ = {
 			isa = PBXGroup;
 			children = (
-				755A73071DED66ED00957D4B /* GoogleService-Info.plist */,
-				75FB6DDD1D817CDF00CBFDE4 /* AppDelegate.h */,
-				75FB6DDE1D817CDF00CBFDE4 /* AppDelegate.m */,
-				75FB6DE01D817CDF00CBFDE4 /* ViewController.h */,
-				75FB6DE11D817CDF00CBFDE4 /* ViewController.m */,
-				75FB6DE31D817CDF00CBFDE4 /* Main.storyboard */,
-				75FB6DE61D817CDF00CBFDE4 /* Images.xcassets */,
-				75FB6DE81D817CDF00CBFDE4 /* LaunchScreen.xib */,
-				75FB6DD91D817CDF00CBFDE4 /* Supporting Files */,
+				7568AB6E1E543EAE00C4780D /* HelloVizuryIos.entitlements */,
+				7568AB3A1E543D1900C4780D /* AppDelegate.h */,
+				7568AB3B1E543D1900C4780D /* AppDelegate.m */,
+				7568AB3D1E543D1900C4780D /* ViewController.h */,
+				7568AB3E1E543D1900C4780D /* ViewController.m */,
+				7568AB401E543D1900C4780D /* Main.storyboard */,
+				7568AB431E543D1900C4780D /* Assets.xcassets */,
+				7568AB451E543D1900C4780D /* LaunchScreen.storyboard */,
+				7568AB481E543D1900C4780D /* Info.plist */,
+				7568AB371E543D1900C4780D /* Supporting Files */,
 			);
 			path = HelloVizuryIos;
 			sourceTree = "<group>";
 		};
-		75FB6DD91D817CDF00CBFDE4 /* Supporting Files */ = {
+		7568AB371E543D1900C4780D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				75FB6DDA1D817CDF00CBFDE4 /* Info.plist */,
-				75FB6DDB1D817CDF00CBFDE4 /* main.m */,
+				7568AB381E543D1900C4780D /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		75FB6DF21D817CE000CBFDE4 /* HelloVizuryIosTests */ = {
+		7568AB501E543D1A00C4780D /* HelloVizuryIosTests */ = {
 			isa = PBXGroup;
 			children = (
-				75FB6DF51D817CE000CBFDE4 /* HelloVizuryIosTests.m */,
-				75FB6DF31D817CE000CBFDE4 /* Supporting Files */,
+				7568AB511E543D1A00C4780D /* HelloVizuryIosTests.m */,
+				7568AB531E543D1A00C4780D /* Info.plist */,
 			);
 			path = HelloVizuryIosTests;
 			sourceTree = "<group>";
 		};
-		75FB6DF31D817CE000CBFDE4 /* Supporting Files */ = {
+		7568AB5B1E543D1A00C4780D /* HelloVizuryIosUITests */ = {
 			isa = PBXGroup;
 			children = (
-				75FB6DF41D817CE000CBFDE4 /* Info.plist */,
+				7568AB5C1E543D1A00C4780D /* HelloVizuryIosUITests.m */,
+				7568AB5E1E543D1A00C4780D /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = HelloVizuryIosUITests;
 			sourceTree = "<group>";
 		};
-		7A5BD2783FA42214065DB502 /* Pods */ = {
+		F6DDFDB98DD5A4FC5F734F9A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3320C60F2A234FBA408DAE01 /* Pods-HelloVizuryIos.debug.xcconfig */,
-				7B7A7A855E3079016634A3AF /* Pods-HelloVizuryIos.release.xcconfig */,
-				E726CB30DE5489969EDD1AA7 /* Pods-HelloVizuryIosTests.debug.xcconfig */,
-				7732D010631524AA578616BB /* Pods-HelloVizuryIosTests.release.xcconfig */,
+				7568AB701E54433E00C4780D /* Foundation.framework */,
+				7568AB6A1E543E7000C4780D /* VizuryEventLogger.framework */,
+				4FA2EF82E0210EF4D68D1709 /* libPods-HelloVizuryIos.a */,
+				DE67BC2D84BE1CBFE97DE536 /* libPods-HelloVizuryIosTests.a */,
+				77FC7C665795E881E682A7EC /* libPods-HelloVizuryIosUITests.a */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		75FB6DD51D817CDF00CBFDE4 /* HelloVizuryIos */ = {
+		7568AB331E543D1900C4780D /* HelloVizuryIos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 75FB6DF91D817CE000CBFDE4 /* Build configuration list for PBXNativeTarget "HelloVizuryIos" */;
+			buildConfigurationList = 7568AB611E543D1A00C4780D /* Build configuration list for PBXNativeTarget "HelloVizuryIos" */;
 			buildPhases = (
-				36745D570C8CD915AD43D18C /* [CP] Check Pods Manifest.lock */,
-				75FB6DD21D817CDF00CBFDE4 /* Sources */,
-				75FB6DD31D817CDF00CBFDE4 /* Frameworks */,
-				75FB6DD41D817CDF00CBFDE4 /* Resources */,
-				CE9B2DDB847EE3B4C24C6F3C /* [CP] Embed Pods Frameworks */,
-				2E60F4A870C3B6CD12C024EC /* [CP] Copy Pods Resources */,
+				819FA2EDD4D07781804E403C /* [CP] Check Pods Manifest.lock */,
+				7568AB301E543D1900C4780D /* Sources */,
+				7568AB311E543D1900C4780D /* Frameworks */,
+				7568AB321E543D1900C4780D /* Resources */,
+				A263B865BD26F288C7A36EA6 /* [CP] Embed Pods Frameworks */,
+				6BCD46185A157C54FCDA95DA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
-				755A73031DED65A000957D4B /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
 			name = HelloVizuryIos;
 			productName = HelloVizuryIos;
-			productReference = 75FB6DD61D817CDF00CBFDE4 /* HelloVizuryIos.app */;
+			productReference = 7568AB341E543D1900C4780D /* HelloVizuryIos.app */;
 			productType = "com.apple.product-type.application";
 		};
-		75FB6DEE1D817CE000CBFDE4 /* HelloVizuryIosTests */ = {
+		7568AB4C1E543D1A00C4780D /* HelloVizuryIosTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 75FB6DFC1D817CE000CBFDE4 /* Build configuration list for PBXNativeTarget "HelloVizuryIosTests" */;
+			buildConfigurationList = 7568AB641E543D1A00C4780D /* Build configuration list for PBXNativeTarget "HelloVizuryIosTests" */;
 			buildPhases = (
-				3E02BD706C5E7B69C589B65A /* [CP] Check Pods Manifest.lock */,
-				75FB6DEB1D817CE000CBFDE4 /* Sources */,
-				75FB6DEC1D817CE000CBFDE4 /* Frameworks */,
-				75FB6DED1D817CE000CBFDE4 /* Resources */,
-				FD7D6C8F0F24C93A0148605D /* [CP] Embed Pods Frameworks */,
-				B3DB6EB333AF7C699529A760 /* [CP] Copy Pods Resources */,
+				AC75FC2AFCC14067A670AF2D /* [CP] Check Pods Manifest.lock */,
+				7568AB491E543D1A00C4780D /* Sources */,
+				7568AB4A1E543D1A00C4780D /* Frameworks */,
+				7568AB4B1E543D1A00C4780D /* Resources */,
+				5BC350396660D5887BA8D9AE /* [CP] Embed Pods Frameworks */,
+				83F20ACD31216FCEB3495BB7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				75FB6DF11D817CE000CBFDE4 /* PBXTargetDependency */,
+				7568AB4F1E543D1A00C4780D /* PBXTargetDependency */,
 			);
 			name = HelloVizuryIosTests;
 			productName = HelloVizuryIosTests;
-			productReference = 75FB6DEF1D817CE000CBFDE4 /* HelloVizuryIosTests.xctest */;
+			productReference = 7568AB4D1E543D1A00C4780D /* HelloVizuryIosTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7568AB571E543D1A00C4780D /* HelloVizuryIosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7568AB671E543D1A00C4780D /* Build configuration list for PBXNativeTarget "HelloVizuryIosUITests" */;
+			buildPhases = (
+				2CF64A93B058FEDAFA181E0B /* [CP] Check Pods Manifest.lock */,
+				7568AB541E543D1A00C4780D /* Sources */,
+				7568AB551E543D1A00C4780D /* Frameworks */,
+				7568AB561E543D1A00C4780D /* Resources */,
+				5BF3B9D07419CA0C320D5CA4 /* [CP] Embed Pods Frameworks */,
+				E4FF60B91E3AC755BAED28E2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7568AB5A1E543D1A00C4780D /* PBXTargetDependency */,
+			);
+			name = HelloVizuryIosUITests;
+			productName = HelloVizuryIosUITests;
+			productReference = 7568AB581E543D1A00C4780D /* HelloVizuryIosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		75FB6DCE1D817CDF00CBFDE4 /* Project object */ = {
+		7568AB2C1E543D1900C4780D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Vizury;
 				TargetAttributes = {
-					75FB6DD51D817CDF00CBFDE4 = {
-						CreatedOnToolsVersion = 6.1.1;
+					7568AB331E543D1900C4780D = {
+						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = GJ9KW5KCDS;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
-					75FB6DEE1D817CE000CBFDE4 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 75FB6DD51D817CDF00CBFDE4;
+					7568AB4C1E543D1A00C4780D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = GJ9KW5KCDS;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7568AB331E543D1900C4780D;
+					};
+					7568AB571E543D1A00C4780D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = GJ9KW5KCDS;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7568AB331E543D1900C4780D;
 					};
 				};
 			};
-			buildConfigurationList = 75FB6DD11D817CDF00CBFDE4 /* Build configuration list for PBXProject "HelloVizuryIos" */;
+			buildConfigurationList = 7568AB2F1E543D1900C4780D /* Build configuration list for PBXProject "HelloVizuryIos" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -244,30 +302,38 @@
 				en,
 				Base,
 			);
-			mainGroup = 75FB6DCD1D817CDF00CBFDE4;
-			productRefGroup = 75FB6DD71D817CDF00CBFDE4 /* Products */;
+			mainGroup = 7568AB2B1E543D1900C4780D;
+			productRefGroup = 7568AB351E543D1900C4780D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				75FB6DD51D817CDF00CBFDE4 /* HelloVizuryIos */,
-				75FB6DEE1D817CE000CBFDE4 /* HelloVizuryIosTests */,
+				7568AB331E543D1900C4780D /* HelloVizuryIos */,
+				7568AB4C1E543D1A00C4780D /* HelloVizuryIosTests */,
+				7568AB571E543D1A00C4780D /* HelloVizuryIosUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		75FB6DD41D817CDF00CBFDE4 /* Resources */ = {
+		7568AB321E543D1900C4780D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75FB6DE51D817CDF00CBFDE4 /* Main.storyboard in Resources */,
-				755A73081DED66ED00957D4B /* GoogleService-Info.plist in Resources */,
-				75FB6DEA1D817CDF00CBFDE4 /* LaunchScreen.xib in Resources */,
-				75FB6DE71D817CDF00CBFDE4 /* Images.xcassets in Resources */,
+				7568AB471E543D1900C4780D /* LaunchScreen.storyboard in Resources */,
+				7568AB6D1E543E7D00C4780D /* GoogleService-Info.plist in Resources */,
+				7568AB441E543D1900C4780D /* Assets.xcassets in Resources */,
+				7568AB421E543D1900C4780D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		75FB6DED1D817CE000CBFDE4 /* Resources */ = {
+		7568AB4B1E543D1A00C4780D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7568AB561E543D1A00C4780D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -277,22 +343,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2E60F4A870C3B6CD12C024EC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloVizuryIos/Pods-HelloVizuryIos-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		36745D570C8CD915AD43D18C /* [CP] Check Pods Manifest.lock */ = {
+		2CF64A93B058FEDAFA181E0B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -307,52 +358,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		3E02BD706C5E7B69C589B65A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		B3DB6EB333AF7C699529A760 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloVizuryIosTests/Pods-HelloVizuryIosTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CE9B2DDB847EE3B4C24C6F3C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloVizuryIos/Pods-HelloVizuryIos-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FD7D6C8F0F24C93A0148605D /* [CP] Embed Pods Frameworks */ = {
+		5BC350396660D5887BA8D9AE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -367,61 +373,180 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloVizuryIosTests/Pods-HelloVizuryIosTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5BF3B9D07419CA0C320D5CA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloVizuryIosUITests/Pods-HelloVizuryIosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BCD46185A157C54FCDA95DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloVizuryIos/Pods-HelloVizuryIos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		819FA2EDD4D07781804E403C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		83F20ACD31216FCEB3495BB7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloVizuryIosTests/Pods-HelloVizuryIosTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A263B865BD26F288C7A36EA6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloVizuryIos/Pods-HelloVizuryIos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC75FC2AFCC14067A670AF2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E4FF60B91E3AC755BAED28E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloVizuryIosUITests/Pods-HelloVizuryIosUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		75FB6DD21D817CDF00CBFDE4 /* Sources */ = {
+		7568AB301E543D1900C4780D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75FB6DE21D817CDF00CBFDE4 /* ViewController.m in Sources */,
-				75FB6DDF1D817CDF00CBFDE4 /* AppDelegate.m in Sources */,
-				75FB6DDC1D817CDF00CBFDE4 /* main.m in Sources */,
+				7568AB3F1E543D1900C4780D /* ViewController.m in Sources */,
+				7568AB3C1E543D1900C4780D /* AppDelegate.m in Sources */,
+				7568AB391E543D1900C4780D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		75FB6DEB1D817CE000CBFDE4 /* Sources */ = {
+		7568AB491E543D1A00C4780D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75FB6DF61D817CE000CBFDE4 /* HelloVizuryIosTests.m in Sources */,
+				7568AB521E543D1A00C4780D /* HelloVizuryIosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7568AB541E543D1A00C4780D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7568AB5D1E543D1A00C4780D /* HelloVizuryIosUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		75FB6DF11D817CE000CBFDE4 /* PBXTargetDependency */ = {
+		7568AB4F1E543D1A00C4780D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 75FB6DD51D817CDF00CBFDE4 /* HelloVizuryIos */;
-			targetProxy = 75FB6DF01D817CE000CBFDE4 /* PBXContainerItemProxy */;
+			target = 7568AB331E543D1900C4780D /* HelloVizuryIos */;
+			targetProxy = 7568AB4E1E543D1A00C4780D /* PBXContainerItemProxy */;
+		};
+		7568AB5A1E543D1A00C4780D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7568AB331E543D1900C4780D /* HelloVizuryIos */;
+			targetProxy = 7568AB591E543D1A00C4780D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		75FB6DE31D817CDF00CBFDE4 /* Main.storyboard */ = {
+		7568AB401E543D1900C4780D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				75FB6DE41D817CDF00CBFDE4 /* Base */,
+				7568AB411E543D1900C4780D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		75FB6DE81D817CDF00CBFDE4 /* LaunchScreen.xib */ = {
+		7568AB451E543D1900C4780D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				75FB6DE91D817CDF00CBFDE4 /* Base */,
+				7568AB461E543D1900C4780D /* Base */,
 			);
-			name = LaunchScreen.xib;
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		75FB6DF71D817CE000CBFDE4 /* Debug */ = {
+		7568AB5F1E543D1A00C4780D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -429,43 +554,47 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		75FB6DF81D817CE000CBFDE4 /* Release */ = {
+		7568AB601E543D1A00C4780D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -473,226 +602,168 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		75FB6DFA1D817CE000CBFDE4 /* Debug */ = {
+		7568AB621E543D1A00C4780D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3320C60F2A234FBA408DAE01 /* Pods-HelloVizuryIos.debug.xcconfig */;
+			baseConfigurationReference = 84D8DB0D85276806FD9002DF /* Pods-HelloVizuryIos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = HelloVizuryIos/HelloVizuryIos.entitlements;
+				DEVELOPMENT_TEAM = GJ9KW5KCDS;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/anurag/Documents/app2app/vizury-ios-sdk.git",
 					"$(PROJECT_DIR)",
-					/Users/anurag/Desktop/vizurgEventLogger,
-					fwk/bitcode,
-					enabled,
-					/Users/anurag/Desktop/vizurgEventLogger,
-					fwk/bitcode,
-					"disabled(old)",
 				);
-				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = HelloVizuryIos/Info.plist;
-				LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-l\"GGLCloudMessaging\"",
-					"-l\"GGLCore\"",
-					"-l\"GGLInstanceIDLib\"",
-					"-l\"GcmLib\"",
-					"-l\"sqlite3\"",
-					"-l\"stdc++\"",
-					"-l\"z\"",
-					"-framework",
-					"\"AddressBook\"",
-					"-framework",
-					"\"AssetsLibrary\"",
-					"-framework",
-					"\"CoreFoundation\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"CoreLocation\"",
-					"-framework",
-					"\"CoreMotion\"",
-					"-framework",
-					"\"GoogleIPhoneUtilities\"",
-					"-framework",
-					"\"GoogleInterchangeUtilities\"",
-					"-framework",
-					"\"GoogleNetworkingUtilities\"",
-					"-framework",
-					"\"GoogleSymbolUtilities\"",
-					"-framework",
-					"\"GoogleUtilities\"",
-					"-framework",
-					"\"MessageUI\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"$(inherited)",
-					"\"SystemConfiguration\"",
-				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vizury.HelloVizuryIos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		75FB6DFB1D817CE000CBFDE4 /* Release */ = {
+		7568AB631E543D1A00C4780D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B7A7A855E3079016634A3AF /* Pods-HelloVizuryIos.release.xcconfig */;
+			baseConfigurationReference = 259C150D787451E43ABB080A /* Pods-HelloVizuryIos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = HelloVizuryIos/HelloVizuryIos.entitlements;
+				DEVELOPMENT_TEAM = GJ9KW5KCDS;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/anurag/Documents/app2app/vizury-ios-sdk.git",
 					"$(PROJECT_DIR)",
-					/Users/anurag/Desktop/vizurgEventLogger,
-					fwk/bitcode,
-					enabled,
-					/Users/anurag/Desktop/vizurgEventLogger,
-					fwk/bitcode,
-					"disabled(old)",
 				);
-				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = HelloVizuryIos/Info.plist;
-				LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-l\"GGLCloudMessaging\"",
-					"-l\"GGLCore\"",
-					"-l\"GGLInstanceIDLib\"",
-					"-l\"GcmLib\"",
-					"-l\"sqlite3\"",
-					"-l\"stdc++\"",
-					"-l\"z\"",
-					"-framework",
-					"\"AddressBook\"",
-					"-framework",
-					"\"AssetsLibrary\"",
-					"-framework",
-					"\"CoreFoundation\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"CoreLocation\"",
-					"-framework",
-					"\"CoreMotion\"",
-					"-framework",
-					"\"GoogleIPhoneUtilities\"",
-					"-framework",
-					"\"GoogleInterchangeUtilities\"",
-					"-framework",
-					"\"GoogleNetworkingUtilities\"",
-					"-framework",
-					"\"GoogleSymbolUtilities\"",
-					"-framework",
-					"\"GoogleUtilities\"",
-					"-framework",
-					"\"MessageUI\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"$(inherited)",
-					"\"SystemConfiguration\"",
-				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vizury.HelloVizuryIos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		75FB6DFD1D817CE000CBFDE4 /* Debug */ = {
+		7568AB651E543D1A00C4780D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E726CB30DE5489969EDD1AA7 /* Pods-HelloVizuryIosTests.debug.xcconfig */;
+			baseConfigurationReference = 3E0B65637DEFBF2DA3268C99 /* Pods-HelloVizuryIosTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				DEVELOPMENT_TEAM = GJ9KW5KCDS;
 				INFOPLIST_FILE = HelloVizuryIosTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vizury.HelloVizuryIosTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloVizuryIos.app/HelloVizuryIos";
 			};
 			name = Debug;
 		};
-		75FB6DFE1D817CE000CBFDE4 /* Release */ = {
+		7568AB661E543D1A00C4780D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7732D010631524AA578616BB /* Pods-HelloVizuryIosTests.release.xcconfig */;
+			baseConfigurationReference = 3CE9565E5C9700FDED951587 /* Pods-HelloVizuryIosTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				DEVELOPMENT_TEAM = GJ9KW5KCDS;
 				INFOPLIST_FILE = HelloVizuryIosTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vizury.HelloVizuryIosTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloVizuryIos.app/HelloVizuryIos";
+			};
+			name = Release;
+		};
+		7568AB681E543D1A00C4780D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9554810AFF80DF06787FB82 /* Pods-HelloVizuryIosUITests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = GJ9KW5KCDS;
+				INFOPLIST_FILE = HelloVizuryIosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vizury.HelloVizuryIosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HelloVizuryIos;
+			};
+			name = Debug;
+		};
+		7568AB691E543D1A00C4780D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E10BE1216404CE6E17E157C3 /* Pods-HelloVizuryIosUITests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = GJ9KW5KCDS;
+				INFOPLIST_FILE = HelloVizuryIosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vizury.HelloVizuryIosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HelloVizuryIos;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		75FB6DD11D817CDF00CBFDE4 /* Build configuration list for PBXProject "HelloVizuryIos" */ = {
+		7568AB2F1E543D1900C4780D /* Build configuration list for PBXProject "HelloVizuryIos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				75FB6DF71D817CE000CBFDE4 /* Debug */,
-				75FB6DF81D817CE000CBFDE4 /* Release */,
+				7568AB5F1E543D1A00C4780D /* Debug */,
+				7568AB601E543D1A00C4780D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		75FB6DF91D817CE000CBFDE4 /* Build configuration list for PBXNativeTarget "HelloVizuryIos" */ = {
+		7568AB611E543D1A00C4780D /* Build configuration list for PBXNativeTarget "HelloVizuryIos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				75FB6DFA1D817CE000CBFDE4 /* Debug */,
-				75FB6DFB1D817CE000CBFDE4 /* Release */,
+				7568AB621E543D1A00C4780D /* Debug */,
+				7568AB631E543D1A00C4780D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		75FB6DFC1D817CE000CBFDE4 /* Build configuration list for PBXNativeTarget "HelloVizuryIosTests" */ = {
+		7568AB641E543D1A00C4780D /* Build configuration list for PBXNativeTarget "HelloVizuryIosTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				75FB6DFD1D817CE000CBFDE4 /* Debug */,
-				75FB6DFE1D817CE000CBFDE4 /* Release */,
+				7568AB651E543D1A00C4780D /* Debug */,
+				7568AB661E543D1A00C4780D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7568AB671E543D1A00C4780D /* Build configuration list for PBXNativeTarget "HelloVizuryIosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7568AB681E543D1A00C4780D /* Debug */,
+				7568AB691E543D1A00C4780D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 75FB6DCE1D817CDF00CBFDE4 /* Project object */;
+	rootObject = 7568AB2C1E543D1900C4780D /* Project object */;
 }
