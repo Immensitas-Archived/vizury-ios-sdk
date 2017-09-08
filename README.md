@@ -22,7 +22,7 @@
 
 Examples on how the Vizury iOS SDK can be integrated.
 
-`examples/HelloVizury` is a sample app having a basic integration with vizury SDK.
+`sampleApp/HelloVizury` is a sample app having a basic integration with vizury SDK.
 
 
 ## <a id="basic-integration"></a>Basic Integration
