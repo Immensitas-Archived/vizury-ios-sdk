@@ -99,7 +99,7 @@ Where
 When a user browse through the app, various activities happen e.g. visiting a product, adding the product to cart, making purchase, etc. These are called events. Corresponding to each event, app needs to pass certain variables to the SDK which the SDK will automatically pass to Vizury servers.
 
 
-#### Objectve-C
+#### Objective-C
 ----
 Create an attributeDictionary with the attributes associated with the event and call `[VizuryEventLogger logEvent]` with event name and the attributeDictionary.
 
@@ -194,7 +194,7 @@ Click on `Cloud Messaging` tab and upload APNs Authentication Key (.p8 format). 
 * Drag the GoogleService-Info.plist file you just downloaded into the root of your Xcode project and add it to all targets
 * Register for Pushnotifications inside didFinishLaunchingWithOptions method of you AppDelegate
 
-#### Objectve-C
+#### Objective-C
 ----
 ```objc
     // Register for remote notifications. This shows a permission dialog on first run, to
@@ -270,7 +270,7 @@ Click on `Cloud Messaging` tab and upload APNs Authentication Key (.p8 format). 
 
 Pass the APNS token to Vizury
 
-#### Objectve-C
+#### Objective-C
 ----
 ```objc
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
@@ -289,7 +289,7 @@ Pass the APNS token to Vizury
 
 In case of any failed registration
 
-#### Objectve-C
+#### Objective-C
 ----
 ```objc
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
@@ -308,7 +308,7 @@ In case of any failed registration
 
 * Handling notification payload
 
-#### Objectve-C
+#### Objective-C
 -----
 ```objc
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(							UIBackgroundFetchResult))completionHandler {
@@ -340,7 +340,7 @@ In case of any failed registration
 
 In order to open Deep Links that are sent to the device as a Key/Value pair along with a push notification you must implement a custom handler
 
-#### Objectve-C
+#### Objective-C
 -----
 ```objc
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(							UIBackgroundFetchResult))completionHandler {
