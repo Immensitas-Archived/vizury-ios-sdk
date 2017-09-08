@@ -135,10 +135,13 @@ For sending push notifications we are using GCM-APNS interface. For this you nee
 To enable sending Push Notifications through APNs, you need
 
 a) Create the authentication key.
+
 b) Create an App ID
+
 c) Provisioning profile for that App ID.
 
-You can create them in the [Apple Developer Member Center][apple-dev-member-center]. You can follow [these steps][provisioning-profiles]
+
+You can create them in the [Apple Developer Member Center][apple-dev-member-center] by following [these steps][provisioning-profiles]
 
 
 ### <a id="config-fcm"></a>Configuring project for FCM
