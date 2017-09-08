@@ -186,7 +186,7 @@ Next go the `Manage` option of the created project.
 
 Click on `Cloud Messaging` tab and upload APNs Authentication Key (.p8 format). Also note down the the `Legacy Server key` as this will be required later during the integration. You can also upload APNs certificaties but configuration with auth keys is recommended as they are the more current method for sending notifications to iOS
 
-![createProject-4](https://github.com/vizury/vizury-ios-sdk/blob/master/resources/upload-p12.png )
+![createProject-4](https://github.com/vizury/vizury-ios-sdk/blob/master/resources/upload-p8.png )
 
 
 ### <a id="config-app"></a>Configuring Application
