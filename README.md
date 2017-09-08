@@ -12,9 +12,9 @@
 	* [Event Logging](#event-logging)
   * [Push Notifications](#push-notifications)
 	* [Configuring Apple Developer Settings](#config-apple-dev)
-	* [Configuring project for GCM](#config-gcm)
+	* [Configuring project for FCM](#config-fcm)
 		* [Set up CocoaPods dependencies](#setup-pods)
-		* [Enabling GCM](#enable-gcm)
+		* [Enabling FCM](#enable-fcm)
 	* [Configuring Application](#config-app) 
 	* [DeepLinks](#deeplinks)
  
@@ -22,13 +22,13 @@
 
 Examples on how the Vizury iOS SDK can be integrated.
 
-`examples/HelloVizuryIos` is a sample app having a basic integration with vizury SDK.
+`examples/HelloVizury` is a sample app having a basic integration with vizury SDK.
 
 
 ## <a id="basic-integration"></a>Basic Integration
 
 ### <a id="sdk-get"></a>Getting the SDK
-Download the latest Vizury iOS SDK [`VizuryEventLogger`][VizuryEventLogger_ios]. The framework file is `bitcode enabled`. Extract the archive into a directory of your choice. The extracted file is `VizuryEventLogger.framework`
+Download the latest Vizury iOS SDK [`VizuryEventLogger`][VizuryEventLogger_ios]. The framework file is available with `bitcode enabled` and `bitcode disabled`. Extract the required archive into a directory of your choice. The extracted file is `VizuryEventLogger.framework`
 
 ### <a id="sdk-add"></a>Add the SDK to project
 Go to the Build phases -> Link Binary with Libraries. Click on the `+` icon
@@ -58,7 +58,7 @@ Add `Foundation.framework` , then click on `Add Other` and add the extracted `Vi
                             WithPackageId:(NSString *)packageId
                             ServerURL:(NSString *)serverURL
                             WithCachingEnabled:(BOOL) caching
-                            AndGCMWithSandBoxOption:(NSObject *)sandBoxOption];
+                            AndWithFCMEnabled:(BOOL) isFCMEnabled];
 ```
 
 #### Swift
@@ -82,7 +82,7 @@ VizuryEventLogger.initializeEventLogger(in: application,
 			withPackageId: packageId, 
 			serverURL: serverUrl,
 			withCachingEnabled: caching, 
-			andGCMWithSandBoxOption:sandBoxOption as NSObject!)
+			AndWithFCMEnabled: isFCMEnabled)
 ```
 
 ```
@@ -91,8 +91,7 @@ Where
   serverURL     : serverURL obtained from vizury
   caching       : pass true if your app supports offline usage and you want to send user behaviour data 
                   to vizury while he was offline. Pass false otherwise
-  sandBoxOption : @YES for for development or @NO for production (Objective-C)
-                  1 for development and 0 for production (Swift)
+  isFCMEnabled  : true/false depending on if you want to use vizury for push
 ``` 
  
 ### <a id="event-logging"></a>Event Logging
@@ -100,7 +99,7 @@ Where
 When a user browse through the app, various activities happen e.g. visiting a product, adding the product to cart, making purchase, etc. These are called events. Corresponding to each event, app needs to pass certain variables to the SDK which the SDK will automatically pass to Vizury servers.
 
 
-#### Objectve-C
+#### Objective-C
 ----
 Create an attributeDictionary with the attributes associated with the event and call `[VizuryEventLogger logEvent]` with event name and the attributeDictionary.
 
@@ -135,14 +134,14 @@ For sending push notifications we are using GCM-APNS interface. For this you nee
 
 To enable sending Push Notifications through APNs, you need
 
-a) An SSL certificate associated with an App ID configured for Push Notifications.
-    
-b) Provisioning profile for that App ID.
+a) Create the authentication key.
+b) Create an App ID
+c) Provisioning profile for that App ID.
 
-You can create both in the [Apple Developer Member Center][apple-dev-member-center]. You can follow [these steps][provisioning-profiles] for creating SSL certificates and Provisioning Profiles.
+You can create them in the [Apple Developer Member Center][apple-dev-member-center]. You can follow [these steps][provisioning-profiles]
 
 
-### <a id="config-gcm"></a>Configuring project for GCM
+### <a id="config-fcm"></a>Configuring project for FCM
 
 #### <a id="setup-pods"></a>Set up CocoaPods dependencies
 
@@ -154,10 +153,10 @@ $ cd your-project directory
 $ pod init
 ```
 
-* Add the `Google/CloudMessaging` pod
+* Add the `Firebase/Messaging` pod
 
 ```
-pod 'Google/CloudMessaging'
+pod 'Firebase/Messaging'
 ```
 
 * Install the pods and open the .xcworkspace file to see the project in Xcode
@@ -167,7 +166,7 @@ $ pod install
 $ open your-project.xcworkspace
 ```
 	
-#### <a id="enable-gcm"></a>Enabling GCM
+#### <a id="enable-fcm"></a>Enabling FCM
 
 Create a Firebase project in the [Firebase console][firebase-console] if you don't already have one. Enter the `AppName` and `Region`.
 
@@ -178,44 +177,76 @@ Click on `iOS` option and in the next screen add the `iOS Bundle Id`. The `iOS B
 
 ![createProject-2](https://github.com/vizury/vizury-ios-sdk/blob/master/resources/add-bundle-id.png)
 
+`Note : The GoogleService-Info.plist file that you have downloaded will have certain settings like IS_ADS_ENABLED, IS_SIGNIN_ENABLED set as YES. You have to add correspinding pod dependencies for the same or you can turn them off if you are not using them`
 
 Next go the `Manage` option of the created project.
 
 ![createProject-3](https://github.com/vizury/vizury-ios-sdk/blob/master/resources/manage-app.png )
 
 
-Click on `Cloud Messaging` tab and upload APNS Certificates (P12 format). Also note down the the `Legacy Server key` as this will be required later during the integration
+Click on `Cloud Messaging` tab and upload APNs Authentication Key (.p8 format). Also note down the the `Legacy Server key` as this will be required later during the integration. You can also upload APNs certificaties but configuration with auth keys is recommended as they are the more current method for sending notifications to iOS
 
-![createProject-4](https://github.com/vizury/vizury-ios-sdk/blob/master/resources/upload-p12.png )
+![createProject-4](https://github.com/vizury/vizury-ios-sdk/blob/master/resources/upload-p8.png )
 
-
-
-`Note: When you are developing, upload the development APNS certificate to get the development configuration file. While releasing upload production APNS certificate to get production configuration file and use it in the project. Also make sure you change the AndGCMWithSandBoxOption value to @NO while` [initializing the vizury sdk](#sdk-init)
-
-`Note : The GoogleService-Info.plist file that you have downloaded will have certain settings like IS_ADS_ENABLED, IS_SIGNIN_ENABLED set as YES. You have to add correspinding pod dependencies for the same or you can turn them off if you are not using them`
 
 ### <a id="config-app"></a>Configuring Application
 
 * Drag the GoogleService-Info.plist file you just downloaded into the root of your Xcode project and add it to all targets
 * Register for Pushnotifications inside didFinishLaunchingWithOptions method of you AppDelegate
 
-#### Objectve-C
+#### Objective-C
 ----
 ```objc
+    // Register for remote notifications. This shows a permission dialog on first run, to
+    // show the dialog at a more appropriate time move this registration accordingly.
     if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_7_1) {
-        // iOS 7.1 or earlier
+        // iOS 7.1 or earlier. Disable the deprecation warnings.
+        #pragma clang diagnostic push
+        #pragma clang diagnostic ignored "-Wdeprecated-declarations"
         UIRemoteNotificationType allNotificationTypes =
         (UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge);
         [application registerForRemoteNotificationTypes:allNotificationTypes];
+        #pragma clang diagnostic pop
     } else {
         // iOS 8 or later
-        UIUserNotificationType allNotificationTypes =
-        (UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge);
-        UIUserNotificationSettings *settings =
-        [UIUserNotificationSettings settingsForTypes:allNotificationTypes categories:nil];
-        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+        // [START register_for_notifications]
+        if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max) {
+            #pragma clang diagnostic push
+            #pragma clang diagnostic ignored "-Wdeprecated-declarations"
+            UIUserNotificationType allNotificationTypes =
+            (UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge);
+            UIUserNotificationSettings *settings =
+            [UIUserNotificationSettings settingsForTypes:allNotificationTypes categories:nil];
+            [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+        } else {
+            // iOS 10 or later
+            #if defined(__IPHONE_10_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
+            // For iOS 10 display notification (sent via APNS)
+            [UNUserNotificationCenter currentNotificationCenter].delegate = self;
+            UNAuthorizationOptions authOptions =
+            UNAuthorizationOptionAlert | UNAuthorizationOptionSound | UNAuthorizationOptionBadge;
+            [[UNUserNotificationCenter currentNotificationCenter] requestAuthorizationWithOptions:authOptions completionHandler:^(BOOL granted, NSError * _Nullable error) {
+            }];
+            #endif
+        }
+        
         [[UIApplication sharedApplication] registerForRemoteNotifications];
-    }
+        // [END register_for_notifications]
+```
+* For iOS10 and above you also need to add the below code. You can refer to the sample app.
+
+```objc
+#if defined(__IPHONE_10_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
+@import UserNotifications;
+#endif
+
+// Implement UNUserNotificationCenterDelegate to receive display notification via APNS for devices
+// running iOS 10 and above.
+#if defined(__IPHONE_10_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
+@interface AppDelegate () <UNUserNotificationCenterDelegate>
+@end
+#endif
+
 ```
 
 #### Swift
@@ -239,7 +270,7 @@ Click on `Cloud Messaging` tab and upload APNS Certificates (P12 format). Also n
 
 Pass the APNS token to Vizury
 
-#### Objectve-C
+#### Objective-C
 ----
 ```objc
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
@@ -258,7 +289,7 @@ Pass the APNS token to Vizury
 
 In case of any failed registration
 
-#### Objectve-C
+#### Objective-C
 ----
 ```objc
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
@@ -277,7 +308,7 @@ In case of any failed registration
 
 * Handling notification payload
 
-#### Objectve-C
+#### Objective-C
 -----
 ```objc
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(							UIBackgroundFetchResult))completionHandler {
@@ -285,7 +316,7 @@ In case of any failed registration
  }
 ```
 
-####Swift
+#### Swift
 ----
 ```swift
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any], fetchCompletionHandler 			completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {        
@@ -309,7 +340,7 @@ In case of any failed registration
 
 In order to open Deep Links that are sent to the device as a Key/Value pair along with a push notification you must implement a custom handler
 
-#### Objectve-C
+#### Objective-C
 -----
 ```objc
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(							UIBackgroundFetchResult))completionHandler {
