@@ -15,7 +15,7 @@
 		7589ABB51F615E0C0094843B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7589ABB41F615E0C0094843B /* GoogleService-Info.plist */; };
 		7589ABC01F6169410094843B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7589ABB61F615EE10094843B /* Foundation.framework */; };
 		7589ABC31F616BFD0094843B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7589AB9D1F6128DC0094843B /* main.m */; };
-		7589ABCA1F62918C0094843B /* VizuryEventLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7589ABC11F6169FF0094843B /* VizuryEventLogger.framework */; };
+		7589ABCD1F62A24C0094843B /* VizuryEventLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7589ABCC1F62A24C0094843B /* VizuryEventLogger.framework */; };
 		E08F41A96BBA5E5AD502D4C7 /* libPods-HelloVizury.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8A97100973A59C9D120205 /* libPods-HelloVizury.a */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +35,7 @@
 		7589ABB31F612B8B0094843B /* HelloVizury.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HelloVizury.entitlements; sourceTree = "<group>"; };
 		7589ABB41F615E0C0094843B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7589ABB61F615EE10094843B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		7589ABC11F6169FF0094843B /* VizuryEventLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VizuryEventLogger.framework; sourceTree = "<group>"; };
+		7589ABCC1F62A24C0094843B /* VizuryEventLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VizuryEventLogger.framework; sourceTree = "<group>"; };
 		CA8A97100973A59C9D120205 /* libPods-HelloVizury.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloVizury.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -44,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7589ABCA1F62918C0094843B /* VizuryEventLogger.framework in Frameworks */,
+				7589ABCD1F62A24C0094843B /* VizuryEventLogger.framework in Frameworks */,
 				7589ABC01F6169410094843B /* Foundation.framework in Frameworks */,
 				E08F41A96BBA5E5AD502D4C7 /* libPods-HelloVizury.a in Frameworks */,
 			);
@@ -65,7 +65,7 @@
 		5459D0BB12A35A624777D417 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7589ABC11F6169FF0094843B /* VizuryEventLogger.framework */,
+				7589ABCC1F62A24C0094843B /* VizuryEventLogger.framework */,
 				7589ABB61F615EE10094843B /* Foundation.framework */,
 				CA8A97100973A59C9D120205 /* libPods-HelloVizury.a */,
 			);
