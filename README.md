@@ -166,7 +166,7 @@ $ pod install
 $ open your-project.xcworkspace
 ```
 	
-#### <a id="enable-fcm"></a>Enabling fCM
+#### <a id="enable-fcm"></a>Enabling FCM
 
 Create a Firebase project in the [Firebase console][firebase-console] if you don't already have one. Enter the `AppName` and `Region`.
 
