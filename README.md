@@ -12,9 +12,9 @@
 	* [Event Logging](#event-logging)
   * [Push Notifications](#push-notifications)
 	* [Configuring Apple Developer Settings](#config-apple-dev)
-	* [Configuring project for GCM](#config-gcm)
+	* [Configuring project for FCM](#config-fcm)
 		* [Set up CocoaPods dependencies](#setup-pods)
-		* [Enabling GCM](#enable-gcm)
+		* [Enabling FCM](#enable-fcm)
 	* [Configuring Application](#config-app) 
 	* [DeepLinks](#deeplinks)
  
@@ -91,7 +91,7 @@ Where
   serverURL     : serverURL obtained from vizury
   caching       : pass true if your app supports offline usage and you want to send user behaviour data 
                   to vizury while he was offline. Pass false otherwise
-  isFCMEnabled : true/false depending on if you want to use vizury for push
+  isFCMEnabled  : true/false depending on if you want to use vizury for push
 ``` 
  
 ### <a id="event-logging"></a>Event Logging
@@ -134,11 +134,11 @@ For sending push notifications we are using GCM-APNS interface. For this you nee
 
 To enable sending Push Notifications through APNs, you need
 
-a) An SSL certificate associated with an App ID configured for Push Notifications.
-    
-b) Provisioning profile for that App ID.
+a) Create the authentication key.
+b) Create an App ID
+c) Provisioning profile for that App ID.
 
-You can create both in the [Apple Developer Member Center][apple-dev-member-center]. You can follow [these steps][provisioning-profiles] for creating SSL certificates and Provisioning Profiles.
+You can create them in the [Apple Developer Member Center][apple-dev-member-center]. You can follow [these steps][provisioning-profiles]
 
 
 ### <a id="config-fcm"></a>Configuring project for FCM
@@ -166,7 +166,7 @@ $ pod install
 $ open your-project.xcworkspace
 ```
 	
-#### <a id="enable-gcm"></a>Enabling GCM
+#### <a id="enable-fcm"></a>Enabling fCM
 
 Create a Firebase project in the [Firebase console][firebase-console] if you don't already have one. Enter the `AppName` and `Region`.
 
