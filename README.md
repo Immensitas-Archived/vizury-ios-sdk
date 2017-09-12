@@ -191,6 +191,11 @@ Click on `Cloud Messaging` tab and upload APNs Authentication Key (.p8 format). 
 
 ![createProject-4](https://github.com/vizury/vizury-ios-sdk/blob/master/resources/upload-p8.png )
 
+While uploading APNs Authentication Key (.p8 format) you need to enter the KeyId and App Id prefix
+1. 'Key ID' is the id of the authentication key you created in Apple developer console under Keys -> All 
+2. 'App ID Prefix' is the app prefix in Apple developer console under Identifiers -> App Ids
+
+![createProject-5](https://github.com/vizury/vizury-ios-sdk/blob/master/resources/key_prefix.png)
 
 ### <a id="config-app"></a>Configuring Application
 
