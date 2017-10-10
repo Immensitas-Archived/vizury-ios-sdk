@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		752CE6361F8D114F00BDF5B0 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 752CE6351F8D114F00BDF5B0 /* NotificationService.m */; };
+		752CE63A1F8D114F00BDF5B0 /* MyNotiService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 752CE6321F8D114F00BDF5B0 /* MyNotiService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		752CE6401F8D125A00BDF5B0 /* libVizuryRichNotification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 752CE63F1F8D125A00BDF5B0 /* libVizuryRichNotification.a */; };
 		7589ABA11F6128DC0094843B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7589ABA01F6128DC0094843B /* AppDelegate.m */; };
 		7589ABA41F6128DC0094843B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7589ABA31F6128DC0094843B /* ViewController.m */; };
 		7589ABA71F6128DC0094843B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7589ABA51F6128DC0094843B /* Main.storyboard */; };
@@ -19,9 +22,39 @@
 		E08F41A96BBA5E5AD502D4C7 /* libPods-HelloVizury.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8A97100973A59C9D120205 /* libPods-HelloVizury.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		752CE6381F8D114F00BDF5B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7589AB911F6128DC0094843B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 752CE6311F8D114F00BDF5B0;
+			remoteInfo = MyNotiService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		752CE6291F8D0D1700BDF5B0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				752CE63A1F8D114F00BDF5B0 /* MyNotiService.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		11BE2A9F9A4D05304840D264 /* Pods-HelloVizury.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloVizury.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloVizury/Pods-HelloVizury.release.xcconfig"; sourceTree = "<group>"; };
 		620AFF424C74C9D79D364534 /* Pods-HelloVizury.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloVizury.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloVizury/Pods-HelloVizury.debug.xcconfig"; sourceTree = "<group>"; };
+		752CE6321F8D114F00BDF5B0 /* MyNotiService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyNotiService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		752CE6341F8D114F00BDF5B0 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		752CE6351F8D114F00BDF5B0 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		752CE6371F8D114F00BDF5B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		752CE63E1F8D125A00BDF5B0 /* VizuryRichNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VizuryRichNotification.h; sourceTree = "<group>"; };
+		752CE63F1F8D125A00BDF5B0 /* libVizuryRichNotification.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libVizuryRichNotification.a; sourceTree = "<group>"; };
 		7589AB991F6128DC0094843B /* HelloVizury.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloVizury.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7589AB9D1F6128DC0094843B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7589AB9F1F6128DC0094843B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +73,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		752CE62F1F8D114F00BDF5B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				752CE6401F8D125A00BDF5B0 /* libVizuryRichNotification.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7589AB961F6128DC0094843B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,10 +113,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		752CE6331F8D114F00BDF5B0 /* MyNotiService */ = {
+			isa = PBXGroup;
+			children = (
+				752CE63F1F8D125A00BDF5B0 /* libVizuryRichNotification.a */,
+				752CE63E1F8D125A00BDF5B0 /* VizuryRichNotification.h */,
+				752CE6341F8D114F00BDF5B0 /* NotificationService.h */,
+				752CE6351F8D114F00BDF5B0 /* NotificationService.m */,
+				752CE6371F8D114F00BDF5B0 /* Info.plist */,
+			);
+			path = MyNotiService;
+			sourceTree = "<group>";
+		};
 		7589AB901F6128DC0094843B = {
 			isa = PBXGroup;
 			children = (
 				7589AB9B1F6128DC0094843B /* HelloVizury */,
+				752CE6331F8D114F00BDF5B0 /* MyNotiService */,
 				7589AB9A1F6128DC0094843B /* Products */,
 				2454E169A0C87202A55A2300 /* Pods */,
 				5459D0BB12A35A624777D417 /* Frameworks */,
@@ -86,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				7589AB991F6128DC0094843B /* HelloVizury.app */,
+				752CE6321F8D114F00BDF5B0 /* MyNotiService.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +174,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		752CE6311F8D114F00BDF5B0 /* MyNotiService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 752CE63B1F8D114F00BDF5B0 /* Build configuration list for PBXNativeTarget "MyNotiService" */;
+			buildPhases = (
+				752CE62E1F8D114F00BDF5B0 /* Sources */,
+				752CE62F1F8D114F00BDF5B0 /* Frameworks */,
+				752CE6301F8D114F00BDF5B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyNotiService;
+			productName = MyNotiService;
+			productReference = 752CE6321F8D114F00BDF5B0 /* MyNotiService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		7589AB981F6128DC0094843B /* HelloVizury */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7589ABB01F6128DC0094843B /* Build configuration list for PBXNativeTarget "HelloVizury" */;
@@ -129,10 +201,12 @@
 				7589AB971F6128DC0094843B /* Resources */,
 				2557BEB32983F043A3F7900B /* [CP] Embed Pods Frameworks */,
 				4C72C58A549E20BD64FCE8B0 /* [CP] Copy Pods Resources */,
+				752CE6291F8D0D1700BDF5B0 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				752CE6391F8D114F00BDF5B0 /* PBXTargetDependency */,
 			);
 			name = HelloVizury;
 			productName = HelloVizury;
@@ -145,14 +219,22 @@
 		7589AB911F6128DC0094843B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Anurag;
 				TargetAttributes = {
+					752CE6311F8D114F00BDF5B0 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = GJ9KW5KCDS;
+						ProvisioningStyle = Automatic;
+					};
 					7589AB981F6128DC0094843B = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = GJ9KW5KCDS;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -174,11 +256,19 @@
 			projectRoot = "";
 			targets = (
 				7589AB981F6128DC0094843B /* HelloVizury */,
+				752CE6311F8D114F00BDF5B0 /* MyNotiService */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		752CE6301F8D114F00BDF5B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7589AB971F6128DC0094843B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,6 +331,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		752CE62E1F8D114F00BDF5B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				752CE6361F8D114F00BDF5B0 /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7589AB951F6128DC0094843B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,6 +350,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		752CE6391F8D114F00BDF5B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 752CE6311F8D114F00BDF5B0 /* MyNotiService */;
+			targetProxy = 752CE6381F8D114F00BDF5B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7589ABA51F6128DC0094843B /* Main.storyboard */ = {
@@ -273,6 +379,54 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		752CE63C1F8D114F00BDF5B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GJ9KW5KCDS;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MyNotiService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyNotiService",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vizury.HelloVizury.MyNotiService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		752CE63D1F8D114F00BDF5B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GJ9KW5KCDS;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MyNotiService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyNotiService",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vizury.HelloVizury.MyNotiService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		7589ABAE1F6128DC0094843B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -283,7 +437,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -291,7 +447,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -333,7 +493,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -341,7 +503,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -373,6 +539,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HelloVizury/HelloVizury.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = GJ9KW5KCDS;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -393,6 +560,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HelloVizury/HelloVizury.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = GJ9KW5KCDS;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -410,6 +578,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		752CE63B1F8D114F00BDF5B0 /* Build configuration list for PBXNativeTarget "MyNotiService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				752CE63C1F8D114F00BDF5B0 /* Debug */,
+				752CE63D1F8D114F00BDF5B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7589AB941F6128DC0094843B /* Build configuration list for PBXProject "HelloVizury" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
