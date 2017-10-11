@@ -17,6 +17,9 @@
 		* [Enabling FCM](#enable-fcm)
 	* [Configuring Application](#config-app) 
 	* [DeepLinks](#deeplinks)
+	* [iOS 10 Rich Notifications](#ios10-rich)
+		* [Create Notification Service Extension](#create-noti-service)
+		* [Adding Vizury to Notification Service Extension](#add-viz-noti)
  
 ## <a id="example-app"></a>Example app
 
@@ -395,7 +398,41 @@ In order to open Deep Links that are sent to the device as a Key/Value pair alon
     }
 ```
 
+### <a id="ios10-rich"></a> iOS 10 Rich Notifications
 
+With iOS 10 you can add image, gifs, audio and video to your notifications.
+
+#### <a id="create-noti-service"></a> Create Notification Service Extension
+
+Add a Notification Service Extension target to your project (File -> New -> Target -> Notification Service Extension)
+
+Define the name for the Notification Service Extension
+
+Make sure the deployment target for notification service is set to 10
+
+Make sure in capabilities for the target App 
+1. Push notifications is enabled
+2. Background Modes is enabled with 
+	a. Background Fetch
+	b. Remote Notification
+
+
+#### <a id="add-viz-noti"></a> Add Vizury to Notification Service Extension
+
+Add the VizuryRichNotification folder to your Notification Service Extension target
+
+Make the below code changes in the NotificationService.m file.
+
+```objc
+#import "VizuryRichNotification.h"
+
+- (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent * _Nonnull))contentHandler {
+    self.contentHandler = contentHandler;
+    self.bestAttemptContent = [request.content mutableCopy];
+
+    [[VizuryRichNotification getInstance] didReceiveNotificationRequest:request withContentHandler:contentHandler];
+}
+```
 
  [VizuryEventLogger_ios]:    https://github.com/vizury/vizury-ios-sdk/tree/master/binary
  [VizuryEventLogger_ios_bitcode_enable]:    https://github.com/vizury/vizury-ios-sdk/tree/master/binary/bitcodeEnabled
