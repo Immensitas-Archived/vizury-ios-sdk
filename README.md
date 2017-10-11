@@ -414,16 +414,16 @@ With iOS 10 you can add image, gifs, audio and video to your notifications.
 
 3. Make sure the deployment target for notification service is set to 10
 
-4. Make sure in capabilities for the target App 
-	a. Push notifications is enabled
-	b. Background Modes is enabled with Background Fetch and Remote Notification
+4. Make sure in capabilities for the target App, `Push notifications` is enabled
+	
+5. Make sure in capabilities for the target App, `Background Modes` is enabled with `Background Fetch` and `Remote Notification`
 
 ![rich-2](https://github.com/vizury/vizury-ios-sdk/blob/master/resources/enableBackgroundModes.png)
 
 
 #### <a id="add-viz-noti"></a> Add Vizury to Notification Service Extension
 
-Add the VizuryRichNotification folder to your Notification Service Extension target
+Add the [`VizuryRichNotification`][VizuryRichNotification] folder to your Notification Service Extension target
 
 ![rich-3](https://github.com/vizury/vizury-ios-sdk/blob/master/resources/addVizNotiFiles.png)
 
@@ -432,7 +432,8 @@ Make the below code changes in the NotificationService.m file.
 ```objc
 #import "VizuryRichNotification.h"
 
-- (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent * _Nonnull))contentHandler {
+- (void)didReceiveNotificationRequest:(UNNotificationRequest *)request 
+	withContentHandler:(void (^)(UNNotificationContent * _Nonnull))contentHandler {
     self.contentHandler = contentHandler;
     self.bestAttemptContent = [request.content mutableCopy];
 
@@ -447,3 +448,5 @@ Make the below code changes in the NotificationService.m file.
  [apple-dev-member-center]:  	https://developer.apple.com/membercenter/index.action
  [provisioning-profiles]:	https://firebase.google.com/docs/cloud-messaging/ios/certs
  [firebase-console]:           	https://console.firebase.google.com
+ [VizuryRichNotification]:	https://github.com/vizury/vizury-ios-sdk/tree/master/binary/bitcode_enabled/VizuryRichNotification
+ 
