@@ -115,7 +115,7 @@
 // Handle notification messages after display notification is tapped by the user.
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center
                 didReceiveNotificationResponse:(UNNotificationResponse *)response
-                withCompletionHandler:(void (^)())completionHandler {
+                withCompletionHandler:(void (^)(void))completionHandler {
     NSDictionary *userInfo = response.notification.request.content.userInfo;
     [VizuryEventLogger didReceiveResponseWithUserInfo:userInfo];
     
