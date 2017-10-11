@@ -406,17 +406,17 @@ With iOS 10 you can add image, gifs, audio and video to your notifications.
 
 #### <a id="create-noti-service"></a> Create Notification Service Extension
 
-Add a Notification Service Extension target to your project (File -> New -> Target -> Notification Service Extension)
+1. Add a Notification Service Extension target to your project (File -> New -> Target -> Notification Service Extension)
 
 ![rich-1](https://github.com/vizury/vizury-ios-sdk/blob/master/resources/note-service.png)
 
-Define the name for the Notification Service Extension in the next step.
+2. Define the name for the Notification Service Extension in the next step.
 
-Make sure the deployment target for notification service is set to 10
+3. Make sure the deployment target for notification service is set to 10
 
-Make sure in capabilities for the target App 
-1. Push notifications is enabled
-2. Background Modes is enabled with Background Fetch and Remote Notification
+4. Make sure in capabilities for the target App 
+	a. Push notifications is enabled
+	b. Background Modes is enabled with Background Fetch and Remote Notification
 
 ![rich-2](https://github.com/vizury/vizury-ios-sdk/blob/master/resources/enableBackgroundModes.png)
 
