@@ -416,10 +416,7 @@ Make sure the deployment target for notification service is set to 10
 
 Make sure in capabilities for the target App 
 1. Push notifications is enabled
-2. Background Modes is enabled with 
-
-	a. Background Fetch
-	b. Remote Notification
+2. Background Modes is enabled with Background Fetch and Remote Notification
 
 ![rich-2](https://github.com/vizury/vizury-ios-sdk/blob/master/resources/enableBackgroundModes.png)
 
