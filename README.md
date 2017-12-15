@@ -107,15 +107,30 @@ When a user browse through the app, various activities happen e.g. visiting a pr
 Create an attributeDictionary with the attributes associated with the event and call `[VizuryEventLogger logEvent]` with event name and the attributeDictionary.
 
 ```objc
-	#import <VizuryEventLogger/VizuryEventLogger.h>
+    #import <VizuryEventLogger/VizuryEventLogger.h>
 
-	NSDictionary *attributeDictionary  =   [[NSDictionary alloc] initWithObjectsAndKeys:
+    NSDictionary *attributeDictionary  =   [[NSDictionary alloc] initWithObjectsAndKeys:
                                             @"AKSJDASNBD",@"productid",
                                             @"789", @"productPrice",
                                             @"Shirt",@"category",
                                             nil];
 
     [VizuryEventLogger logEvent:@"productPage" WithAttributes:attributeDictionary];
+    
+    // sending a JSONObject
+    NSDictionary *productDetail = [NSDictionary dictionaryWithObjectsAndKeys:
+                                   @"62112",@"product_id",
+                                   @"1",@"quantity",
+                                   @"50", @"price",
+                                   nil];
+    
+    NSData *productjsonData = [NSJSONSerialization dataWithJSONObject:productDetail options:0 error:nil];
+    NSString *productjsonStr = [[NSString alloc] initWithData:productjsonData encoding:NSUTF8StringEncoding];
+    
+    NSDictionary *productjsonDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
+                                           productjsonStr,@"viz_data",
+                                           nil];
+    [VizuryEventLogger logEvent:@"productDetails" WithAttributes:productjsonDictionary];
 ```
 
 #### Swift
