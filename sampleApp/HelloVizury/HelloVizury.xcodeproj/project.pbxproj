@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		750B26F3221AB9430012CD98 /* libVizuryRichNotification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 750B26F2221AB9430012CD98 /* libVizuryRichNotification.a */; };
 		752CE6601F8E220C00BDF5B0 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 752CE65F1F8E220C00BDF5B0 /* NotificationService.m */; };
 		752CE6651F8E220C00BDF5B0 /* MyNotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 752CE65C1F8E220B00BDF5B0 /* MyNotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		752CE66E1F8E24F300BDF5B0 /* libVizuryRichNotification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 752CE66C1F8E24F200BDF5B0 /* libVizuryRichNotification.a */; };
 		7589ABA11F6128DC0094843B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7589ABA01F6128DC0094843B /* AppDelegate.m */; };
 		7589ABA41F6128DC0094843B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7589ABA31F6128DC0094843B /* ViewController.m */; };
 		7589ABA71F6128DC0094843B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7589ABA51F6128DC0094843B /* Main.storyboard */; };
@@ -49,11 +49,11 @@
 /* Begin PBXFileReference section */
 		11BE2A9F9A4D05304840D264 /* Pods-HelloVizury.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloVizury.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloVizury/Pods-HelloVizury.release.xcconfig"; sourceTree = "<group>"; };
 		620AFF424C74C9D79D364534 /* Pods-HelloVizury.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloVizury.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloVizury/Pods-HelloVizury.debug.xcconfig"; sourceTree = "<group>"; };
+		750B26F2221AB9430012CD98 /* libVizuryRichNotification.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVizuryRichNotification.a; path = MyNotificationService/libVizuryRichNotification.a; sourceTree = "<group>"; };
 		752CE65C1F8E220B00BDF5B0 /* MyNotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyNotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		752CE65E1F8E220C00BDF5B0 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
 		752CE65F1F8E220C00BDF5B0 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
 		752CE6611F8E220C00BDF5B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		752CE66C1F8E24F200BDF5B0 /* libVizuryRichNotification.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libVizuryRichNotification.a; sourceTree = "<group>"; };
 		752CE66D1F8E24F300BDF5B0 /* VizuryRichNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VizuryRichNotification.h; sourceTree = "<group>"; };
 		7589AB991F6128DC0094843B /* HelloVizury.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloVizury.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7589AB9D1F6128DC0094843B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				752CE66E1F8E24F300BDF5B0 /* libVizuryRichNotification.a in Frameworks */,
+				750B26F3221AB9430012CD98 /* libVizuryRichNotification.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +106,7 @@
 		5459D0BB12A35A624777D417 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				750B26F2221AB9430012CD98 /* libVizuryRichNotification.a */,
 				7589ABCC1F62A24C0094843B /* VizuryEventLogger.framework */,
 				7589ABB61F615EE10094843B /* Foundation.framework */,
 				CA8A97100973A59C9D120205 /* libPods-HelloVizury.a */,
@@ -116,7 +117,6 @@
 		752CE65D1F8E220C00BDF5B0 /* MyNotificationService */ = {
 			isa = PBXGroup;
 			children = (
-				752CE66C1F8E24F200BDF5B0 /* libVizuryRichNotification.a */,
 				752CE66D1F8E24F300BDF5B0 /* VizuryRichNotification.h */,
 				752CE65E1F8E220C00BDF5B0 /* NotificationService.h */,
 				752CE65F1F8E220C00BDF5B0 /* NotificationService.m */,
@@ -199,8 +199,6 @@
 				7589AB951F6128DC0094843B /* Sources */,
 				7589AB961F6128DC0094843B /* Frameworks */,
 				7589AB971F6128DC0094843B /* Resources */,
-				2557BEB32983F043A3F7900B /* [CP] Embed Pods Frameworks */,
-				4C72C58A549E20BD64FCE8B0 /* [CP] Copy Pods Resources */,
 				752CE6641F8E220C00BDF5B0 /* Embed App Extensions */,
 			);
 			buildRules = (
@@ -283,49 +281,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2557BEB32983F043A3F7900B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloVizury/Pods-HelloVizury-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4C72C58A549E20BD64FCE8B0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloVizury/Pods-HelloVizury-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		EC88E09EC81C8FD40042F4D2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloVizury-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -468,7 +439,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -524,7 +495,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -551,7 +522,7 @@
 				CODE_SIGN_ENTITLEMENTS = HelloVizury/HelloVizury.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = GJ9KW5KCDS;
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -572,7 +543,7 @@
 				CODE_SIGN_ENTITLEMENTS = HelloVizury/HelloVizury.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = GJ9KW5KCDS;
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
